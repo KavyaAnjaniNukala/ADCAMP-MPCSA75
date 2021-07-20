@@ -1,0 +1,25 @@
+import java.util.*;
+class Sort
+{
+public static void main(String args[])
+{
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+Scanner sc=new Scanner(System.in);
+int n;
+int key;
+String value;
+System.out.println("enter n value");
+n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+key=sc.nextInt();
+value=sc.next();
+x.put(key,value);
+}
+for (Integer i:x.keySet()) 
+{
+    String j = x.get(i);
+    System.out.println(+ i + " " + j);
+  }
+}
+}
